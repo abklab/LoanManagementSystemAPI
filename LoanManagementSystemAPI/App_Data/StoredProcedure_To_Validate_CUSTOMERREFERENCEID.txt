@@ -1,0 +1,15 @@
+﻿
+--Note: In addition to this stored procedure,
+--please create a view base on the Loan_Outstanding_3 and name it 'vwCustomersLoanOutstanding'
+
+CREATE proc [dbo].[usp_validateCustomerRefernceID]
+	@refrenceID VARCHAR(50)='12345678912'
+	
+	AS
+	 declare @outputValue int;  
+	     
+	 SELECT @outputValue = COUNT(*)  
+	 FROM [dbo].[vwCustomersLoanOutstanding] 
+	 where Account_Number = @refrenceID;
+
+	return @outputValue
