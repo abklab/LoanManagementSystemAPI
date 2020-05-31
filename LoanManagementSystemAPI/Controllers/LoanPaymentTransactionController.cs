@@ -104,7 +104,7 @@ namespace Proviso_1_2.Controllers
                     response.ERRORDESCRIPTION = "Successful transaction";
                     response.FLAG = "Y";
                     response.CONTENT = $"Transaction (TXNID: {momotransaction.TXNID}) submitted successfully ({responseTime}).";
-                    services.LogTransaction(response,momotransaction.AMOUNT);
+                    services.LogTransaction(response,momotransaction.AMOUNT);//this logs transaxtions
                     return Ok(response);
                 }
                 else

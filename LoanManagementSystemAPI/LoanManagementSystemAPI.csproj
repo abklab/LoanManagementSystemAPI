@@ -262,6 +262,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DatabaseModifications.sql" />
     <Content Include="App_Data\ProvisodbScript.sql" />
     <Content Include="App_Data\StoredProcedure_To_Validate_CUSTOMERREFERENCEID.txt" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
