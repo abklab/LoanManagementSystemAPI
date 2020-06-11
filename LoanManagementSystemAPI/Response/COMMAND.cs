@@ -6,7 +6,7 @@ using System.Web;
 
 namespace LoanManagementSystemAPI.Response
 {
-    [DataContract(Namespace = "Proviso_1_2", Name = "COMMAND")]
+    [DataContract(Namespace = "Proviso_1_2", Name = "COMMAND", IsReference =true)]
     public class COMMAND
     {
         [DataMember]

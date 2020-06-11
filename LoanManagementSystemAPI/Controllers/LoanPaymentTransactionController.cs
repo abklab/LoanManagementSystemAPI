@@ -71,7 +71,7 @@ namespace Proviso_1_2.Controllers
         public IHttpActionResult PostByMomoNumber([FromBody]COMMAND command)
         {
             if (command == null)
-                BadRequest("Wrong Input body. Please check and try again");
+               return BadRequest("Wrong Input body. Please check and try again");
 
             var momotransaction = new MomoTransaction
             {

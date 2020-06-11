@@ -6,7 +6,7 @@ using System.Web;
 
 namespace LoanManagementSystemAPI.Models
 {
-    [DataContract(Namespace = "Proviso_1_2")]
+    [DataContract(Namespace = "")]
     public class PostResponseVM
     {
         [DataMember]
